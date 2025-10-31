@@ -1,0 +1,21 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "wtf-kavatender",
+	"main": "./src/index.ts",
+	"compatibility_date": "2025-10-08",
+	"upload_source_maps": true,
+	"dispatch_namespaces": [
+		{
+			"binding": "DISPATCHER",
+			"namespace": "my-dispatch-namespace",
+			"experimental_remote": true
+		}
+	],
+	"observability": {
+		"enabled": true
+	},
+	"vars": {
+		"CLOUDFLARE_ACCOUNT_ID": "3931327f6f3b2bf200fead613215b11e",
+		"READONLY": "true"
+	}
+}
